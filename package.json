@@ -11,7 +11,7 @@
 		]
 	},
 	"scripts": {
-		"test": "mocha test",
+		"test": "./node_modules/.bin/mocha test",
 		"coverage": "nyc --reporter=text mocha test",
 		"lint": "eslint src",
 		"build-all": "pkg package.json -t node8-linux,node8-macos,node8-win -o build/vivoh-media-relay"
